@@ -6,8 +6,14 @@
 
 void setup() {
   Serial.begin(9600);
-  Serial.println("Hello, world!");
+  int n = 0;
 }
 
 void loop() {
+  int n = 0;
+  while(true) {
+  delay(1000);
+  n++;
+  Serial.println(n + " sec have elapsed.");
+  }
 }
